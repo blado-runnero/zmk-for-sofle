@@ -188,11 +188,11 @@
         base_layer {
             display-name = "BASE";
             bindings = <
-&kp GRAVE      &kp N1      &kp N2      &kp N3        &kp N4        &kp N5                                       &kp N6      &kp N7        &kp N8        &kp N9       &kp N0       &kp EQUAL
-&kp TAB        &kp Q       &kp W       &kp E         &kp R         &kp T                                        &kp Y       &kp U         &kp I         &kp O        &kp P        &kp BSPC
-&mt LCTRL ESC  &mt LGUI A  &mt LALT S  &mt LCTRL D   &mt LSHFT F   &kp G                                        &kp H       &mt RSHFT J   &mt RCTRL K   &mt RALT L   &mt RGUI SQT &hyper
-&kp LSHFT      &kp Z       &kp X       &kp C         &kp V         &kp B          &kp C_MUTE     &kp DEL         &kp N       &kp M         &kp COMMA     &kp DOT      &kp FSLH     &kp ESC
-                                       &kp LGUI      &kp LALT      &lt MEDIA ESC  &lt NAV SPACE  &lt MOUSE TAB   &lt SYM RET &lt NUM BSPC  &lt FUN DEL   &kp RALT     &kp RGUI
+&mt GRAVE ESC  &kp N1      &kp N2      &kp N3        &kp N4        &kp N5                                       &kp N6      &kp N7        &kp N8        &kp N9       &kp N0       &kp BSPC
+&kp TAB        &kp Q       &kp W       &kp E         &kp R         &kp T                                        &kp Y       &kp U         &kp I         &kp O        &kp P        &kp EQUAL
+&kp CAPS       &mt LGUI A  &mt LALT S  &mt LCTRL D   &mt LSHFT F   &kp G                                        &kp H       &mt RSHFT J   &mt RCTRL K   &mt RALT L   &mt RGUI SQT &kp RSHFT
+&kp LSHFT      &kp Z       &kp X       &kp C         &kp V         &kp B          &kp C_MUTE     &kp DEL         &kp N       &kp M         &kp COMMA     &kp DOT      &kp FSLH     &kp RET
+                                       &kp LGUI      &kp LALT      &lt MEDIA ESC  &lt NAV SPACE  &lt MOUSE SPACE  &lt SYM RET &lt NUM BSPC  &lt FUN DEL   &kp RALT     &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -202,8 +202,8 @@
             display-name = "NAV";
             bindings = <
 &trans         &trans      &trans      &trans        &trans        &trans                                       &trans       &trans      &trans        &trans       &trans       &trans
-&none          &none       &none       &none         &none         &none                                        &kp LG(LS(Z)) &kp LG(V)  &kp LG(C)     &kp LG(X)    &kp LG(Z)    &none
-&none          &kp LGUI    &kp LALT    &kp LCTRL     &kp LSHFT     &none                                        &kp LEFT     &kp DOWN    &kp UP        &kp RIGHT    &kp CAPS     &none
+&none          &none       &none       &none         &none         &none                                        &kp LG(LS(Z)) &kp LG(V)  &kp UP        &kp LG(X)    &kp LG(Z)    &none
+&none          &kp LGUI    &kp LALT    &kp LCTRL     &kp LSHFT     &none                                        &none        &kp LEFT    &kp DOWN      &kp RIGHT    &kp CAPS     &none
 &none          &none       &none       &none         &none         &none          &trans         &trans         &kp INS      &kp HOME    &kp PG_DN     &kp PG_UP    &kp END      &none
                                        &trans        &trans        &none          &none          &none          &kp RET      &kp BSPC    &kp DEL       &trans       &trans
             >;
@@ -259,8 +259,8 @@
             display-name = "MOUSE";
             bindings = <
 &trans         &trans      &trans      &trans        &trans        &trans                                       &trans         &trans         &trans       &trans          &trans     &trans
-&none          &none       &none       &none         &none         &none                                        &none          &none          &none        &none           &none      &none
-&none          &kp LGUI    &kp LALT    &kp LCTRL     &kp LSHFT     &none                                        &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT  &none      &none
+&none          &none       &none       &none         &none         &none                                        &none          &none          &mmv MOVE_UP &none           &none      &none
+&none          &kp LGUI    &kp LALT    &kp LCTRL     &kp LSHFT     &none                                        &none          &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT  &none      &none
 &none          &none       &none       &none         &none         &none          &trans         &trans         &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT  &none      &none
                                        &none         &none         &none          &none          &none          &mkp MCLK      &mkp LCLK      &mkp RCLK    &trans          &trans
             >;
